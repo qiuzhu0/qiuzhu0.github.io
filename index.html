@@ -4,12 +4,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika+Negative:400,700">
-  <title>Ruffleduck</title>
+  <title>Alex Davison</title>
+  <style>
+    body {
+      font-family: 'Signika Negative', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    h2 {
+      font-size: 2em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p.description {
+      font-style: italic;
+      text-align: center;
+      color: #555;
+      margin: 20px 0;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .gif-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    figure {
+      text-align: center;
+      margin: 0;
+    }
+    
+    figure img {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      transition: transform 0.3s, border-color 0.3s;
+      width: 200px;
+      height: 200px;
+    }
+    
+    figure img:hover {
+      transform: scale(1.05);
+      border-color: #3498db;
+    }
+    
+    figure img:active {
+      transform: scale(0.98);
+    }
+    
+    figcaption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h2>Chess:</h2>
+  <h1>Alex Davison</h1>
+  <p class="description">Python/JS/C++ programmer, math and chess nerd, obsessed with solving complex problems with small scripts or applications.</p>
+  
   <a href="https://ruffleduck.github.io/chessdb-mobile/">ChessDB Mobile</a>
-  <h2>Rubik's Cube:</h2>
   <a href="https://ruffleduck.github.io/eocross/">EOcross Solver</a>
+  
+  <h2>Games</h2>
+  <div class="gif-section">
+    <figure>
+      <a href="https://github.com/ruffleduck/minesweeper">
+        <img src="gifs/minesweeper.gif" alt="Minesweeper Game">
+      </a>
+      <figcaption>Minesweeper</figcaption>
+    </figure>
+    <figure>
+      <a href="https://github.com/ruffleduck/platformer-creator">
+        <img src="gifs/platformer.gif" alt="Platformer Game">
+      </a>
+      <figcaption>Platformer level creator</figcaption>
+    </figure>
+    <figure>
+      <a href="https://github.com/ruffleduck/cells-pygame">
+        <img src="gifs/cells.gif" alt="Cells Game">
+      </a>
+      <figcaption>Cells: agar.io remake</figcaption>
+    </figure>
+  </div>
+  
+  <h2>Simulations</h2>
+  <div class="gif-section">
+    <figure>
+      <a href="https://github.com/ruffleduck/conway-pygame">
+        <img src="gifs/conway.gif" alt="Conway's Game of Life">
+      </a>
+      <figcaption>Conway's Game of Life</figcaption>
+    </figure>
+    <figure>
+      <a href="https://github.com/ruffleduck/bezier-curve">
+        <img src="gifs/bezier.gif" alt="Bezier Curve Simulation">
+      </a>
+      <figcaption>Bezier Curve</figcaption>
+    </figure>
+    <figure>
+      <a href="https://github.com/ruffleduck/waterfall">
+        <img src="gifs/waterfall.gif" alt="Waterfall Simulation">
+      </a>
+      <figcaption>Waterfall</figcaption>
+    </figure>
+  </div>
 </body>
 </html>
