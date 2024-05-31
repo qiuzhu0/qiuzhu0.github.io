@@ -15,7 +15,7 @@
       color: #333;
     }
     
-    h1, h2 {
+    h1, h2, h3 {
       color: #2c3e50;
       text-align: center;
     }
@@ -30,27 +30,56 @@
       margin-top: 1.5em;
       margin-bottom: 0.5em;
     }
+    
+    h3 {
+      font-size: 1.75em;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+    }
 
-    p.description {
+    p.description, ul.description {
       font-style: italic;
-      text-align: center;
       color: #555;
       margin: 20px 0;
+      text-align: center;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.description li::before {
+      content: "• ";
+      color: #3498db;
+      font-weight: bold;
     }
     
-    a {
+    .project {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      flex: 1;
+    }
+    
+    .project a {
       color: #3498db;
       text-decoration: none;
       font-weight: bold;
       display: block;
-      text-align: center;
-      margin: 10px 0;
+      margin-bottom: 10px;
+      text-align: left;
     }
     
-    a:hover {
+    .project a:hover {
       text-decoration: underline;
     }
-    
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
     .gif-section {
       display: flex;
       justify-content: center;
@@ -90,11 +119,25 @@
 </head>
 <body>
   <h1>Alex Davison</h1>
-  <p class="description">Python/JS/C++ programmer, math and chess nerd, obsessed with solving complex problems with small scripts or applications.</p>
+  <br>
+  <ul class="description">
+    <li>Python/JS/C++ programmer</li>
+    <li>Math and chess nerd</li>
+    <li>Obsessed with solving complex problems with small scripts or applications</li>
+  </ul>
   
-  <a href="https://ruffleduck.github.io/chessdb-mobile/">ChessDB Mobile</a>
-  <a href="https://ruffleduck.github.io/eocross/">EOcross Solver</a>
-  
+  <h2>Innovations</h2>
+  <div class="projects-container">
+    <div class="project">
+      <a style="text-align: center;" href="https://ruffleduck.github.io/chessdb-mobile/">ChessDB Mobile</a>
+      <p class="description">Mobile interface for accessing chess opening position evaluations from chessdb.cn's API. Displays statistics from lichess.org players' database and masters' database.</p>
+    </div>
+    <div class="project">
+      <a style="text-align: center;" href="https://ruffleduck.github.io/eocross/">EOcross Solver</a>
+      <p class="description">Finds solutions of all axes for EOcross, the first step of (the modern interpretation of) the ZZ method to solving the Rubik's Cube. Uses a novel approach of producing solutions in a two-phase process of EO>cross, generating more human-friendly solutions.</p>
+    </div>
+  </div>
+
   <h2>Games</h2>
   <div class="gif-section">
     <figure>
