@@ -129,11 +129,30 @@
     .project-image img {
       width: 180px;
       height: 250px;
+      padding-right: 10px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>Alex Davison</h1>
+  <div class="contact-info">
+    <a href="mailto:alex@bookmark.org">alex@bookmark.org</a> — (919) 819-7153
+  </div>
   <ul class="description">
     <li>Python/JS/C++ programmer</li>
     <li>Math and chess nerd</li>
@@ -193,7 +212,7 @@
   <h2>Innovations</h2>
   <div class="projects-container">
     <div class="project project-image">
-      <img src="gifs/chessdb.gif" alt="ChessDB Mobile" style="padding-right: 10px;">
+      <img src="gifs/chessdb.gif" alt="ChessDB Mobile">
       <div>
         <a style="text-align: center;" href="https://ruffleduck.github.io/chessdb-mobile/">ChessDB Mobile</a>
         <p class="description">Mobile interface for accessing chess opening position evaluations from chessdb.cn's API. Displays statistics from lichess.org players' database and masters' database.</p>
@@ -208,7 +227,7 @@
         <a style="text-align: center;" href="https://ruffleduck.github.io/eocross/">EOcross Solver</a>
         <p class="description">Web interface for finding EOcross solutions, using the same algorithm implemented in my original C++ program.</p>
       </div>
-      <img src="gifs/eocross.png" alt="ChessDB Mobile" style="padding-left: 10px;">
+      <img src="gifs/eocross.png" alt="ChessDB Mobile">
     </div>
   </div>
 </body>
