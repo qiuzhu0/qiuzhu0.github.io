@@ -3,232 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika+Negative:400,700">
   <title>Alex Davison</title>
   <style>
-    body {
-      font-family: 'Signika Negative', sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    
-    h1, h2, h3 {
-      color: #2c3e50;
+    footer {
       text-align: center;
-    }
-    
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    
-    h2 {
-      font-size: 2em;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    
-    h3 {
-      font-size: 1.75em;
-      margin-top: 1.5em;
-      margin-bottom: 1em;
-    }
-
-    p.description, ul.description {
-      font-style: italic;
-      color: #555;
-      margin: 20px 0;
-      text-align: center;
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul.description li::before {
-      content: "• ";
-      color: #3498db;
-      font-weight: bold;
-    }
-    
-    .project {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-      flex: 1;
-    }
-    
-    .project a {
-      color: #3498db;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-    
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    .projects-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .gif-section {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    
-    figure {
-      text-align: center;
-      margin: 0;
-    }
-    
-    figure img {
-      border: 2px solid #ddd;
-      border-radius: 10px;
-      transition: transform 0.3s, border-color 0.3s;
-      width: 200px;
-      height: 200px;
-    }
-    
-    figure img:hover {
-      transform: scale(1.05);
-      border-color: #3498db;
-    }
-    
-    figure img:active {
-      transform: scale(0.98);
-    }
-    
-    figcaption {
-      margin-top: 10px;
-      font-style: italic;
-      color: #555;
-    }
-
-    .project-image {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .project-image .description {
-      flex: 1;
-      margin-right: 20px;
-    }
-
-    .project-image img {
-      width: 180px;
-      height: 250px;
-      padding-right: 10px;
-    }
-
-    .contact-info {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 1.2em;
-    }
-
-    .contact-info a {
-      color: #3498db;
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
+      position: fixed;
+      background: #006;
+      color: #fff;
+      width: 100%;
+      bottom: 0;
+      left: 0;
     }
   </style>
 </head>
 <body>
   <h1>Alex Davison</h1>
-  <div class="contact-info">
-    <a href="mailto:alex@bookmark.org">alex@bookmark.org</a> — (919) 819-7153
-  </div>
-  <ul class="description">
-    <li>Python/JS/C++ programmer</li>
-    <li>Math and chess nerd</li>
-    <li>Solves complex problems with small scripts</li>
+  <ul>
+    <li>Math undergrad at Stony Brook University (Class of 2028)</li>
+    <li>Mathematical simulation in Python and C++</li>
   </ul>
-
-  <h2>Games</h2>
-  <div class="gif-section">
-    <figure>
-      <a href="https://github.com/ruffleduck/minesweeper">
-        <img src="gifs/minesweeper.gif" alt="Minesweeper Game">
-      </a>
-      <figcaption>Minesweeper</figcaption>
-    </figure>
-    <figure>
-      <a href="https://github.com/ruffleduck/platformer-creator">
-        <img src="gifs/platformer.gif" alt="Platformer Game">
-      </a>
-      <figcaption>Platformer level creator</figcaption>
-    </figure>
-    <figure>
-      <a href="https://github.com/ruffleduck/cells-pygame">
-        <img src="gifs/cells.gif" alt="Cells Game">
-      </a>
-      <figcaption>Cells: agar.io remake</figcaption>
-    </figure>
-  </div>
-  
-  <h2>Simulations</h2>
-  <div class="gif-section">
-    <figure>
-      <a href="https://github.com/ruffleduck/conway-pygame">
-        <img src="gifs/conway.gif" alt="Conway's Game of Life">
-      </a>
-      <figcaption>Conway's Game of Life</figcaption>
-    </figure>
-    <figure>
-      <a href="https://github.com/ruffleduck/bezier-curve">
-        <img src="gifs/bezier.gif" alt="Bezier Curve Simulation">
-      </a>
-      <figcaption>Bezier Curve</figcaption>
-    </figure>
-    <figure>
-      <a href="https://github.com/ruffleduck/waterfall">
-        <img src="gifs/waterfall.gif" alt="Waterfall Simulation">
-      </a>
-      <figcaption>Waterfall</figcaption>
-    </figure>
-    <figure>
-      <a href="https://github.com/ruffleduck/sierpinski-triangle">
-        <img src="gifs/sierpinski.png" alt="Sierpinski Triangle">
-      </a>
-      <figcaption>Sierpinski Triangle</figcaption>
-    </figure>
-  </div>
-
-  <h2>Innovations</h2>
-  <div class="projects-container">
-    <div class="project project-image">
-      <img src="gifs/chessdb.gif" alt="ChessDB Mobile">
-      <div>
-        <a style="text-align: center;" href="https://ruffleduck.github.io/chessdb-mobile/">ChessDB Mobile</a>
-        <p class="description">Mobile interface for accessing chess opening position evaluations from chessdb.cn's API. Displays statistics from lichess.org players' database and masters' database.</p>
-      </div>
-    </div>
-    <div class="project">
-      <a style="text-align: center;" href="https://github.com/ruffleduck/eocross_solver">EOcross Solver (C++)</a>
-      <p class="description">Finds solutions of all axes for EOcross, the first step of (the modern interpretation of) the ZZ method to solving the Rubik's Cube. Uses a novel approach of producing solutions in a two-phase process of EO>cross, generating more human-friendly solutions.</p>
-    </div>
-    <div class="project project-image">
-      <div>
-        <a style="text-align: center;" href="https://ruffleduck.github.io/eocross/">EOcross Solver</a>
-        <p class="description">Web interface for finding EOcross solutions, using the same algorithm implemented in my original C++ program.</p>
-      </div>
-      <img src="gifs/eocross.png" alt="ChessDB Mobile">
-    </div>
-  </div>
+  <b>Projects</b>
+  <ul>
+    <li><a href="https://ruffleduck.github.io/chessdb-mobile/">Chessdb Mobile</a></li>
+    <li><a href="https://github.com/ruffleduck/lambda-calculus">Lambda Calculus</a></li>
+    <li><a href="https://github.com/ruffleduck/weiqi-engine">Weiqi Engine</a></li>
+    <li><a href="https://github.com/ruffleduck/mandelbrot-set">Mandelbrot Set</a></li>
+    <li><a href="https://github.com/ruffleduck/bezier-curve">Bézier Curve</a></li>
+    <li><a href="https://github.com/ruffleduck/conway-pygame">Conway's Game of Life</a></li>
+    <li><a href="https://github.com/ruffleduck/sierpinski-triangle">Sierpinski Triangle</a></li>
+    <li><a href="https://ruffleduck.github.io/eocross/">EOcross Solver</a></li>
+  </ul>
+  <b>Contact</b>
+  <p>alex@bookmark.org | (919) 819-7153</p>
+  <a href="https://github.com/ruffleduck">GitHub</a>
+  <footer><p>&copy; 2025 Alexander Davison</p></footer>
 </body>
 </html>
