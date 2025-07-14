@@ -23,13 +23,6 @@
     }
     li {
       margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-    }
-    li img {
-      margin-right: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     a {
       color: #006;
@@ -60,75 +53,92 @@
     footer p {
       margin: 0;
     }
+    
+    /* Grid layout for projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .project-item img {
+      margin-right: 15px;
+      border-radius: 8px;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    .project-info {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
   <h1>Alex Davison</h1>
   <ul>
-    <li>Mathematics undergrad at Stony Brook University (Class of 2028)</li>
-    <li>Mathematical simulation in Python and C++</li>
+    <li>Mathematics undergraduate student at Stony Brook University (Class of 2028)</li>
+    <li>Numerical analysis and symbolic manipulation in Python, C++, Rust</li>
   </ul>
 
   <div class="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <img src="images/chessdb.png" width="100" height="100" alt="ChessDB">
-        <div>
-          <a href="https://qiuzhu0.github.io/chessdb-mobile/" target="_blank">Chessdb Mobile</a> - 
-          <i>Mobile web interface for chess opening analytics</i>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="images/chessdb.png" alt="ChessDB">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/chessdb-mobile/" target="_blank">Chessdb Mobile</a>
         </div>
-      </li>
-      <li>
-        <img src="images/lambda.png" width="100" height="100" alt="Lambda Calculus">
-        <div>
-          <a href="https://github.com/qiuzhu0/lambda-calculus" target="_blank">Lambda Calculus</a> - 
-          <i>Untyped lambda calculus REPL environment</i>
+      </div>
+      <div class="project-item">
+        <img src="images/lambda.png" alt="Lambda Calculus">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/lambda-calculus" target="_blank">Lambda Calculus</a>
         </div>
-      </li>
-      <li>
-        <img src="images/weiqi.png" width="100" height="100" alt="Weiqi Engine">
-        <div>
-          <a href="https://github.com/qiuzhu0/weiqi-engine" target="_blank">Weiqi Engine</a> - 
-          <i>Go engine using a MCTS algorithm</i>
+      </div>
+      <div class="project-item">
+        <img src="images/weiqi.png" alt="Weiqi Engine">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/weiqi-engine" target="_blank">Weiqi Engine</a>
         </div>
-      </li>
-      <li>
-        <img src="images/mandelbrot.png" width="100" height="100" alt="Mandelbrot Set">
-        <div>
-          <a href="https://github.com/qiuzhu0/mandelbrot-set" target="_blank">Mandelbrot Set</a> - 
-          <i>Mandelbrot set fractal simulation</i>
+      </div>
+      <div class="project-item">
+        <img src="images/mandelbrot.png" alt="Mandelbrot Set">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/mandelbrot-set" target="_blank">Mandelbrot Set</a>
         </div>
-      </li>
-      <li>
-        <img src="images/bezier.png" width="100" height="100" alt="Bézier Curve">
-        <div>
-          <a href="https://github.com/qiuzhu0/bezier-curve" target="_blank">Bézier Curve</a> - 
-          <i>Interactive Bézier curve simulation</i>
+      </div>
+      <div class="project-item">
+        <img src="images/bezier.png" alt="Bézier Curve">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/bezier-curve" target="_blank">Bézier Curve</a>
         </div>
-      </li>
-      <li>
-        <img src="images/conway.png" width="100" height="100" alt="Conway's Game of Life">
-        <div>
-          <a href="https://github.com/qiuzhu0/conway-pygame" target="_blank">Conway's Game of Life</a> - 
-          <i>Game of Life simulation</i>
+      </div>
+      <div class="project-item">
+        <img src="images/conway.png" alt="Conway's Game of Life">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/conway-pygame" target="_blank">Conway's Game of Life</a>
         </div>
-      </li>
-      <li>
-        <img src="images/sierpinski.png" width="100" height="100" alt="Sierpinski Triangle">
-        <div>
-          <a href="https://github.com/qiuzhu0/sierpinski-triangle" target="_blank">Sierpinski Triangle</a> - 
-          <i>Sierpinski triangle fractal simulation</i>
+      </div>
+      <div class="project-item">
+        <img src="images/sierpinski.png" alt="Sierpinski Triangle">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/sierpinski-triangle" target="_blank">Sierpinski Triangle</a>
         </div>
-      </li>
-      <li>
-        <img src="images/eocross.png" width="100" height="100" alt="EOcross Solver">
-        <div>
-          <a href="https://qiuzhu0.github.io/eocross/" target="_blank">EOcross Solver</a> - 
-          <i>Rubik's cube EOcross solution generator</i>
+      </div>
+      <div class="project-item">
+        <img src="images/eocross.png" alt="EOcross Solver">
+        <div class="project-info">
+          <a href="https://github.com/qiuzhu0/eocross/" target="_blank">EOcross Solver</a>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 
   <div class="contact" style="padding: 0 0 5em 0;">
