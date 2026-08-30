@@ -1,154 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Davison</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #006;
-      text-align: center;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 15px;
-    }
-    a {
-      color: #006;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .projects, .contact {
-      margin-top: 30px;
-    }
-    .projects h2, .contact h2 {
-      color: #006;
-      border-bottom: 2px solid #006;
-      padding-bottom: 5px;
-    }
-    footer {
-      text-align: center;
-      position: fixed;
-      background: #006;
-      color: #fff;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      padding: 10px 0;
-    }
-    footer p {
-      margin: 0;
-    }
-    
-    /* Grid layout for projects */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .project-item {
-      display: flex;
-      align-items: center;
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .project-item img {
-      margin-right: 15px;
-      border-radius: 8px;
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-    }
-    .project-info {
-      flex: 1;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Davison</title>
+<meta name="description" content="Personal site of Alexander Davison — mathematics undergraduate at Stony Brook University.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<nav>
+  <p>
+    <a href="index.html">Home</a>,
+    <a href="experience.html">Experience</a>,
+    <a href="resume/alex-davison-resume.pdf">Resume</a>
+  </p>
+</nav>
+<main>
   <h1>Alex Davison</h1>
-  <ul>
-    <li>Mathematics undergraduate student at Stony Brook University (Class of 2027)</li>
-    <li>Interests: formal verification, numerical analysis, algorithm design</li>
-  </ul>
-
-  <div class="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-item">
-        <img src="images/chessdb.png" alt="ChessDB">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/chessdb-mobile/" target="_blank">Chessdb Mobile</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/lambda.png" alt="Lambda Calculus">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/lambda-calculus" target="_blank">Lambda Calculus</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/weiqi.png" alt="Weiqi Engine">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/weiqi-engine" target="_blank">Weiqi Engine</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/mandelbrot.png" alt="Mandelbrot Set">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/mandelbrot-set" target="_blank">Mandelbrot Set</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/bezier.png" alt="Bézier Curve">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/bezier-curve" target="_blank">Bézier Curve</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/conway.png" alt="Conway's Game of Life">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/conway-pygame" target="_blank">Conway's Game of Life</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/sierpinski.png" alt="Sierpinski Triangle">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/sierpinski-triangle" target="_blank">Sierpinski Triangle</a>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/eocross.png" alt="EOcross Solver">
-        <div class="project-info">
-          <a href="https://github.com/qiuzhu0/eocross/" target="_blank">EOcross Solver</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact" style="padding: 0 0 5em 0;">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alex@bookmark.org">alex@bookmark.org</a></p>
-    <p>Phone: (919) 819-7153</p>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Alexander Davison</p>
-  </footer>
+  <img src="alex-davison.jpg" alt="Alex Davison">
+  <p>
+    B.S. Mathematics<br>
+    Stony Brook University (expected May 2027)<br>
+    <a href="mailto:alex@bookmark.org">Email</a>,
+    <a href="https://www.linkedin.com/in/alexander-davison-62086127b/">LinkedIn</a>,
+    <a href="https://github.com/qiuzhu0">GitHub</a>
+  </p>
+  <p>
+    I&rsquo;m a third-year undergraduate studying mathematics and computer
+    science, interested in computational proofs in Lean and type theory, and in
+    building small, modular tools that people actually use.
+  </p>
+  <p>
+    Aside from math and programming, I like chess, tennis, writing, and
+    learning languages.
+  </p>
+</main>
+<footer>
+  <p><small>&copy; 2026 Alexander Davison — Pittsburgh, PA</small></p>
+</footer>
 </body>
 </html>

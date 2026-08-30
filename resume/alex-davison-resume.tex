@@ -1,0 +1,128 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{newpxtext, newpxmath}
+\usepackage[margin=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\setlength{\parindent}{0pt}
+
+% --- Spacing model -------------------------------------------------------
+% All vertical rhythm is point-based and collapses via \addvspace so
+% adjacent glue never stacks: sections get 8pt above / 2pt+rule+5pt
+% below; every entry block gets 5pt above it, whether it follows text
+% or a bullet list.
+
+\newcommand{\ressection}[1]{%
+  \par\addvspace{7pt}%
+  {\large\bfseries #1}\par\nobreak
+  \vspace{2pt}\noindent\rule{\linewidth}{1pt}\par\nobreak
+  \vspace{4pt}%
+}
+
+% Bold left text, right-aligned date/location
+\newcommand{\entry}[2]{%
+  \par\addvspace{4pt}%
+  \noindent\textbf{#1}\hfill #2\par\nobreak
+}
+% Plain left text (role line), right-aligned date
+\newcommand{\subentry}[2]{%
+  \noindent #1\hfill #2\par
+}
+% Single line that is only partly bold (e.g. award lines)
+\newcommand{\mixedentry}[3]{%
+  \par\addvspace{4pt}%
+  \noindent\textbf{#1} #2\hfill #3\par
+}
+
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\linespread{0.97}\selectfont
+
+\begin{document}
+
+% --- Header: centered stack (name / contact line / tagline), rule below ---
+\begin{center}
+  {\fontsize{18}{21}\selectfont\bfseries Alex Davison}\\[3pt]
+  {\footnotesize Pittsburgh, PA\ \textperiodcentered\ (919) 819--7153\ \textperiodcentered\ \href{mailto:alex@bookmark.org}{alex@bookmark.org}\ \textperiodcentered\ \href{https://www.linkedin.com/in/alexander-davison-62086127b/}{LinkedIn}\ \textperiodcentered\ \href{https://alexdavison.xyz/}{alexdavison.xyz}}\\[3pt]
+  {\small\itshape Software developer with a strong background in mathematics.}
+\end{center}
+
+\ressection{EDUCATION}
+
+\entry{Stony Brook University}{Stony Brook, New York}
+\begin{itemize}
+  \item \textbf{Bachelor of Science in Mathematics,} Minor in Computer Science \hfill Expected May 2027
+  \item \textbf{Courses:} Formal Verification and Computer Proofs, Algorithms, Cryptography (Graduate), Number Theory, Programming Abstractions
+\end{itemize}
+
+\ressection{SKILLS}
+
+\begin{itemize}
+  \item \textbf{Programming:} Python, TypeScript, C++
+  \item \textbf{Tools:} NumPy, Matplotlib, Linux, Bash, Git, GitHub
+  \item \textbf{Math:} Analysis, Formal Verification, Algorithm Design
+  \item \textbf{Core Competencies:} Problem-solving, Collaboration, Project Management, Leadership
+  \item \textbf{Languages:} English (Native), Mandarin (Fluent)
+\end{itemize}
+
+\ressection{EXPERIENCE}
+
+\entry{Reprogramming}{}
+\subentry{Software Developer (Contracted)}{2024}
+\begin{itemize}
+  \item Designed and developed a JavaScript web application for Thales Academy (a network of 13 Pre-K--12 schools) to automate creation of math worksheets for elementary students.
+  \item Ensured alignment with curricula by designing features that allow teachers to tailor worksheet creation parameters.
+\end{itemize}
+
+\entry{DataAnnotation}{}
+\subentry{Freelance Software Developer}{2023--25}
+\begin{itemize}
+  \item Worked on a variety of script and codebase revisions across multiple languages (Python, Java, JavaScript, C, C++).
+  \item Provided thorough code reviews, troubleshooting approaches, and detailed explanations of revisions implemented.
+\end{itemize}
+
+\entry{Math Tutoring}{}
+\subentry{Private Tutoring}{2023--24}
+\begin{itemize}
+  \item Tutored students weekly on subjects ranging from elementary level math to AP calculus.
+  \item Helped struggling students catch up with their peers, and motivated overwhelmed students.
+\end{itemize}
+
+\entry{Mathnasium}{2025--now}
+\begin{itemize}
+  \item Collaborated with other tutors to teach and adapt personalized lesson plans for over 50 K--12 students.
+\end{itemize}
+
+\ressection{PROJECTS}
+
+\entry{EOcross Solver}{2022}
+\begin{itemize}
+  \item Invented an algorithm for Rubik's cube EOcross solving that balances computer optimization with human intuition.
+  \item Algorithm was adopted by the CrystalCube project (\href{https://crystalcuber.com}{crystalcuber.com}), used for training by several top speedsolvers.
+\end{itemize}
+
+\entry{ChessDB Mobile}{2023}
+\begin{itemize}
+  \item Developed a mobile-friendly JavaScript web application for exploring chess openings, integrated with real-time statistics and evaluation data using APIs from chessdb.cn and lichess.org.
+  \item Project serves as the original codebase that the ChessPath project (\href{https://chesspath.pro}{chesspath.pro}) was built on, with hundreds of users.
+\end{itemize}
+
+\ressection{STUDENT ENGAGEMENT}
+
+\entry{HackNYU 2025}{2025}
+\begin{itemize}
+  \item Put together and led a four-person team. Guided brainstorming and project planning sessions.
+  \item Developed front-end user profile UI, and back-end database support in Python with SQLite.
+  \item Coordinated the merging of all contributors' work in Git/GitHub and produced the finalized project.
+\end{itemize}
+
+\mixedentry{United States of America Computing Olympiad}{-- USACO Bronze}{2017}
+
+\mixedentry{Competitive Chess}{-- 1\textsuperscript{st} place US Junior Chess Congress 2020, Stony Brook vs.\ Yale Invitationals 2024}{2016--24}
+
+\end{document}

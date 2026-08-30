@@ -1,0 +1,28 @@
+body {
+  font-family: "Palatino", serif;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+a { color: blue; }
+
+main p { text-align: justify; }
+
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #666;
+}
+.year {
+  color: #666;
+  font-weight: normal;
+}
+
+footer { color: #666; }
