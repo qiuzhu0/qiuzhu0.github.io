@@ -13,20 +13,20 @@
 
 % --- Spacing model -------------------------------------------------------
 % All vertical rhythm is point-based and collapses via \addvspace so
-% adjacent glue never stacks: sections get 8pt above / 2pt+rule+5pt
-% below; every entry block gets 5pt above it, whether it follows text
+% adjacent glue never stacks: sections get 7pt above / 2pt+rule+2pt
+% below; every entry block gets 2pt above it, whether it follows text
 % or a bullet list.
 
 \newcommand{\ressection}[1]{%
   \par\addvspace{7pt}%
   {\large\bfseries #1}\par\nobreak
   \vspace{2pt}\noindent\rule{\linewidth}{1pt}\par\nobreak
-  \vspace{4pt}%
+  \vspace{2pt}%
 }
 
 % Bold left text, right-aligned date/location
 \newcommand{\entry}[2]{%
-  \par\addvspace{4pt}%
+  \par\addvspace{2pt}%
   \noindent\textbf{#1}\hfill #2\par\nobreak
 }
 % Plain left text (role line), right-aligned date
@@ -35,20 +35,20 @@
 }
 % Single line that is only partly bold (e.g. award lines)
 \newcommand{\mixedentry}[3]{%
-  \par\addvspace{4pt}%
+  \par\addvspace{2pt}%
   \noindent\textbf{#1} #2\hfill #3\par
 }
 
-\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 
-\linespread{0.97}\selectfont
+\linespread{0.96}\selectfont
 
 \begin{document}
 
 % --- Header: centered stack (name / contact line / tagline), rule below ---
 \begin{center}
   {\fontsize{18}{21}\selectfont\bfseries Alex Davison}\\[3pt]
-  {\footnotesize Pittsburgh, PA\ \textperiodcentered\ (919) 819--7153\ \textperiodcentered\ \href{mailto:alex@bookmark.org}{alex@bookmark.org}\ \textperiodcentered\ \href{https://www.linkedin.com/in/alexander-davison-62086127b/}{LinkedIn}\ \textperiodcentered\ \href{https://alexdavison.xyz/}{alexdavison.xyz}}\\[3pt]
+  {\footnotesize Pittsburgh, PA, (919) 819--7153, \href{mailto:alex@bookmark.org}{alex@bookmark.org}, \href{https://www.linkedin.com/in/alexander-davison-62086127b/}{LinkedIn}, \href{https://alexdavison.com/}{alexdavison.com}}\\[3pt]
   {\small\itshape Software developer with a strong background in mathematics.}
 \end{center}
 
@@ -57,20 +57,30 @@
 \entry{Stony Brook University}{Stony Brook, New York}
 \begin{itemize}
   \item \textbf{Bachelor of Science in Mathematics,} Minor in Computer Science \hfill Expected May 2027
-  \item \textbf{Courses:} Formal Verification and Computer Proofs, Algorithms, Cryptography (Graduate), Number Theory, Programming Abstractions
+  \item \textbf{Courses:} Computer Proofs, Algorithms, Cryptography (Graduate), Number Theory
 \end{itemize}
 
 \ressection{SKILLS}
 
 \begin{itemize}
   \item \textbf{Programming:} Python, TypeScript, C++
-  \item \textbf{Tools:} NumPy, Matplotlib, Linux, Bash, Git, GitHub
-  \item \textbf{Math:} Analysis, Formal Verification, Algorithm Design
-  \item \textbf{Core Competencies:} Problem-solving, Collaboration, Project Management, Leadership
-  \item \textbf{Languages:} English (Native), Mandarin (Fluent)
+  \item \textbf{Tools:} Git, GitHub, Linux, Bash, numpy, matplotlib, \LaTeX
+  \item \textbf{Math:} analysis, formal verification, algorithm design
+  \item \textbf{Core Competencies:} project strategy, problem-solving, collaboration
+  \item \textbf{Languages:} English (native), Mandarin (fluent), Russian (beginner)
 \end{itemize}
 
 \ressection{EXPERIENCE}
+
+\entry{Gecko Robotics}{Summer 2026}
+\subentry{Software Intern}{}
+\begin{itemize}
+  \item Solo-built the logbook capabilities on Gecko's Cantilever software platform for power plants, encompassing all logging modes including daily operator rounds, offloading reports, and work orders.
+  \item Integrated logbook contextual information into Cantilever's agentic document search and LLM pipeline.
+  \item Interviewed control room operators on-site at multiple plants, translating operator feedback into logbook's features.
+  \item Ingested logbook histories of several plants into Cantilever.
+  \item Rolled out to 150+ plants in the US, comprising 5\% of the North American power grid.
+\end{itemize}
 
 \entry{Reprogramming}{}
 \subentry{Software Developer (Contracted)}{2024}
@@ -87,15 +97,10 @@
 \end{itemize}
 
 \entry{Math Tutoring}{}
-\subentry{Private Tutoring}{2023--24}
+\subentry{Math Tutor}{2023--now}
 \begin{itemize}
-  \item Tutored students weekly on subjects ranging from elementary level math to AP calculus.
-  \item Helped struggling students catch up with their peers, and motivated overwhelmed students.
-\end{itemize}
-
-\entry{Mathnasium}{2025--now}
-\begin{itemize}
-  \item Collaborated with other tutors to teach and adapt personalized lesson plans for over 50 K--12 students.
+  \item Tutored students weekly on subjects ranging from elementary level math to calculus 4.
+  \item Private tutoring (2023–2024), Mathnasium tutoring (2024–2025), SBU ASTC tutoring (2025–now)
 \end{itemize}
 
 \ressection{PROJECTS}
@@ -121,7 +126,7 @@
   \item Coordinated the merging of all contributors' work in Git/GitHub and produced the finalized project.
 \end{itemize}
 
-\mixedentry{United States of America Computing Olympiad}{-- USACO Bronze}{2017}
+\mixedentry{USA Computing Olympiad}{}{2017}
 
 \mixedentry{Competitive Chess}{-- 1\textsuperscript{st} place US Junior Chess Congress 2020, Stony Brook vs.\ Yale Invitationals 2024}{2016--24}
 
