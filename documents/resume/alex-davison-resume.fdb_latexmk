@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1788057314.11603 "/Users/alex/Documents/qiuzhu0.github.io/resume/alex-davison-resume.tex" "alex-davison-resume.pdf" "alex-davison-resume" 1788057314.52999 0
-  "/Users/alex/Documents/qiuzhu0.github.io/resume/alex-davison-resume.tex" 1788057313.94104 5687 cf6e7228e05fccf5c927254d31e7c245 ""
+["pdflatex"] 1788125320.88486 "/Users/alex/Documents/qiuzhu0.github.io/documents/alex-davison-resume.tex" "alex-davison-resume.pdf" "alex-davison-resume" 1788125321.29328 0
+  "/Users/alex/Documents/qiuzhu0.github.io/documents/alex-davison-resume.tex" 1788057313.94104 5687 cf6e7228e05fccf5c927254d31e7c245 ""
   "/Users/alex/Library/texmf/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1694207779 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
@@ -103,8 +103,8 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1787883329 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "alex-davison-resume.aux" 1788057314.48877 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
-  "alex-davison-resume.out" 1788057314.37344 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "alex-davison-resume.aux" 1788125321.25329 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
+  "alex-davison-resume.out" 1788125321.13959 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "alex-davison-resume.tex" 1788057313.94104 5687 cf6e7228e05fccf5c927254d31e7c245 ""
   (generated)
   "alex-davison-resume.aux"

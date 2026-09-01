@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{newpxtext, newpxmath}
+
+\newtheorem{thm}{Theorem}[subsection]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{example}[thm]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+
+\title{\textbf{Precalculus}}
+\author{Alex Davison}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+These notes go over ``precalculus,'' the material at the high school level up to but not including calculus. Since things move a lot more quickly and less time is given to routine mechanical processes, it's maybe better seen as a rigorous, second-pass-through precalculus text to prepare for calculus.
+
+\begin{remark}
+    When we introduce a function, we specify its domain and range (each being sets, respectively) by the notation
+    \[
+    f : A \to B
+    \]
+    where $f$ is the function name, $A$ is the domain, and $B$ is the codomain. Remember that functions are little ``machines'' that take in objects of the domain $A$ and produce a unique object in the codomain $B$.
+
+    When we want to specify a function that takes in more than one argument, we have the domain be a \emph{Cartesian product}, which allows for bundling of information---as an example, the pair of real numbers $(a, b)$ belongs not to $\mathbb{R}$ but to $\mathbb{R} \times \mathbb{R}$ or $\mathbb{R}^2$. Thus, addition is considered a function $\mathbb{R} \times \mathbb{R} \to \mathbb{R}$, taking in two numbers and producing a sum.
+
+    To say an object $a$ is in a set $A$ (i.e., $a$ is an \emph{element} or \emph{member} of $A$), we write $a \in A$. If every element of $A$ is also contained in a set $B$, we say $A$ is a \emph{subset} of $B$ and write $A \subseteq B$.
+\end{remark}
+
+\section{Real numbers}
+
+The \emph{real numbers} describe ``everything on the number line,'' so all of the whole numbers plus everything in-between. We denote by $\mathbb{R}$ the set of real numbers, or the number line. We won't lay out the precise mathematical formulation of the real numbers, because that's a bit technical, but generally you should assume everything works as expected with respect to the basic math operations $+, -, \times, \div$ and comparisons $<, \leq, =, \geq, >$. If you are interested in a formal treatment, consult a real analysis textbook.
+
+\subsection{Absolute value and inequalities}
+
+\begin{definition}
+    The \emph{absolute value} $|-| : \mathbb{R} \to \mathbb{R}$ forces a number into its positive form:
+    \[
+    |x| = \begin{cases}x \quad& x \text{ positive,} \\ -x \quad& x \text{ negative.}\end{cases}
+    \]
+    Interpret the above expression as ``If $x$ is positive, then $|x| = x$. If $x$ is negative, then $|x| = -x$.'' This ensures that $|x|$ is positive no matter what.
+\end{definition}
+
+\begin{prop}
+    Some obvious facts:
+    \[
+    |x| \geq 0, \qquad |-x| = |x|, \qquad |xy| = |x||y|.
+    \]
+\end{prop}
+
+\begin{prop}[triangle inequality]
+    $|x + y| \leq |x| + |y|$
+\end{prop}
+
+\begin{proof}
+    We know $-|a| \leq a \leq |a|$ and $-|b| \leq b \leq |b|$. Adding these inequalities together gives
+    \begin{equation}
+        -(|a| + |b|) \leq a + b \leq |a| + |b|.
+    \end{equation}
+    But remember that $-c \leq x \leq c$ for positive $c$ in general is equivalent to saying $|x| \leq c$, so (1) is equivalent to $|a + b| \leq |a| + |b|$.
+\end{proof}
+
+\begin{definition}
+    Given real numbers $a$ and $b$, we denote by $(a, b)$ the \emph{open interval} from $a$ to $b$. A number $x \in (a, b)$ is in the interval if and only if $a < x < b$. The \emph{closed interval} $[a, b]$ includes the endpoints: $x \in [a, b]$ if and only if $a \leq x \leq b$. You can also have $(a, b]$ and $[a, b)$ which are defined as expected.
+\end{definition}
+
+\begin{prop}
+    Suppose $c > 0$. Then $|x| < c$ is equivalent to saying $x \in (-c, c)$, and $|x| \leq c$ is equivalent to saying $x \in [-c, c]$.
+    \[
+    \psi\nu\beta
+    \]
+\end{prop}
+
+\end{document}
