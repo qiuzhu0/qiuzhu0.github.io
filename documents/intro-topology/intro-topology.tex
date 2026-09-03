@@ -202,4 +202,34 @@ These notes introduce general topology and some topics of algebraic topology sui
     is open, being the union of open sets, so $\bigcap_\alpha F_\alpha$ is closed.
 \end{proof}
 
+\begin{definition}[topological continuity]
+    A function $f : X \to Y$ between topological spaces is \emph{continuous} if all preimages of open sets are open.
+\end{definition}
+
+This is a natural generalization of the result given by \cref{contpreimage}. Of course, continuity at a point can be described by preimages of \emph{neighborhoods} of the point being open, just as in the specific metric space case.
+
+\begin{theorem}
+    These are continuous functions:
+    \begin{enumerate}[(a)]
+        \item constant functions,
+        \item identity functions,
+        \item compositions of functions,
+        \item functions such that all preimages of closed sets are closed.
+    \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+    \,
+    \begin{enumerate}[(a)]
+        \item
+            Preimages of constant functions are either going to be the empty set or else the entire domain, both which are open.
+        \item
+            $f^{-1}(U) = U$ for identity functions, so pulling back an open $U$ is still an open set $U$.
+        \item
+            Let $X \xrightarrow{f} Y \xrightarrow{g} Z$ and let $U \subseteq Z$ be open. Then $g^{-1}(U)$ is open by continuity of $g$, so $f^{-1}(g^{-1}(U))$ is open by continuity of $f$, therefore $g \circ f$ is continuous.
+        \item
+            Suppose $f : X \to Y$ is such that preimages of closed sets are closed. Let $U \subseteq Y$ be open. Then $f^{-1}(Y \smallsetminus U)$ is closed, so $Y \smallsetminus f^{-1}(Y \smallsetminus U) = f^{-1}(Y \smallsetminus (Y \smallsetminus U)) = f^{-1}(U)$ is open.
+    \end{enumerate}
+\end{proof}
+
 \end{document}

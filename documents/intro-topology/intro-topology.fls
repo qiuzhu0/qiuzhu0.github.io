@@ -2,7 +2,7 @@ PWD /Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT intro-topology.tex
+INPUT /Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology/intro-topology.tex
 OUTPUT intro-topology.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
