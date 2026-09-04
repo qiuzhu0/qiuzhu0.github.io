@@ -4,6 +4,7 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{newpxtext, newpxmath}
 \usepackage{hyperref, cleveref}
+\usepackage{tikz-cd}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}{Lemma}[section]
@@ -208,6 +209,10 @@ These notes introduce general topology and some topics of algebraic topology sui
 
 This is a natural generalization of the result given by \cref{contpreimage}. Of course, continuity at a point can be described by preimages of \emph{neighborhoods} of the point being open, just as in the specific metric space case.
 
+\begin{definition}[the category of topological spaces]
+    The category of topological spaces $\mathbf{Top}$ has topological spaces as objects and continuous functions as arrows.
+\end{definition}
+
 \begin{theorem}
     These are continuous functions:
     \begin{enumerate}[(a)]
@@ -231,5 +236,27 @@ This is a natural generalization of the result given by \cref{contpreimage}. Of 
             Suppose $f : X \to Y$ is such that preimages of closed sets are closed. Let $U \subseteq Y$ be open. Then $f^{-1}(Y \smallsetminus U)$ is closed, so $Y \smallsetminus f^{-1}(Y \smallsetminus U) = f^{-1}(Y \smallsetminus (Y \smallsetminus U)) = f^{-1}(U)$ is open.
     \end{enumerate}
 \end{proof}
+
+\begin{definition}[homeomorphisms]
+    A bijection $f : X \to Y$ is a \emph{homeomorphism} if it is continuous and its inverse is continuous. If a homeomorphism $X \to Y$ exists, $X$ and $Y$ are \emph{homeomorphic}, denoted by $X \cong Y$.
+\end{definition}
+
+\begin{remark}
+    Being homeomorphic is an equivalence relation.
+\end{remark}
+
+\begin{definition}[topological embeddings]
+    A function $f : X \to Y$ is a \emph{topological embedding} if the subfunction $X \to f(X)$ given by $x \mapsto f(x)$ is a homeomorphism.
+
+    Two embeddings $f_1, f_2 : X \to Y$ are \emph{equivalent} if this diagram in $\mathbf{Top}$ commutes for some $h_X, h_Y$:
+    \[\begin{tikzcd}
+        X & Y \\
+        X & Y
+        \arrow["{f_1}", from=1-1, to=1-2]
+        \arrow["{h_X}"', from=1-1, to=2-1]
+        \arrow["{h_Y}"', from=1-2, to=2-2]
+        \arrow["{f_2}", from=2-1, to=2-2]
+    \end{tikzcd}\]
+\end{definition}
 
 \end{document}
