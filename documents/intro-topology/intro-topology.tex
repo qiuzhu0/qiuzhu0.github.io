@@ -2,7 +2,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[shortlabels]{enumitem}
 \usepackage{amsmath, amssymb, amsthm}
-\usepackage{newpxtext, newpxmath}
+\usepackage[varbb]{newpxmath}
+\usepackage{newpxtext}
 \usepackage{hyperref, cleveref}
 \usepackage{tikz-cd}
 
@@ -30,9 +31,11 @@
 
 \emph{Topology} studies mathematical spaces where quantitative features such as distance, angle, volume, and area are ignored, and qualitative features such as openness, continuity, connectedness, compactness, and holes are focused on instead. Given a structureless set $A$, the minimum amount of data you can append to $A$ such that it properly becomes a \emph{space} with these most basic qualities is exactly a topology.
 
-These notes introduce general topology and some topics of algebraic topology suitable for a strong undergraduate. Some exposure to topological topics from, e.g., an analysis course is helpful. We begin with metric spaces, where a notion of distance is still present; the open sets of a metric space are the motivating example of the abstract topologies defined afterwards.
+These notes introduce general topology and some topics of algebraic topology suitable for a strong undergraduate. The general organization is inspired by my notes from MAT 528: Foundations of Topology at Stony Brook University. Some exposure to topological topics from, e.g., an analysis course is helpful.
 
 \section{Metric spaces}
+
+Before delving into the more abstract realm of general topological spaces, let's consider spaces where we at least have a notion of distance, called \emph{metric spaces}.
 
 \begin{definition}[metric spaces]
     Given a set $X$, a function $d : X \times X \to [0,\infty)$ is a \emph{metric} if these hold for all $x, y, z \in X$:
@@ -45,7 +48,13 @@ These notes introduce general topology and some topics of algebraic topology sui
 \end{definition}
 
 \begin{example}
-    $\mathbb{R}$ has the \emph{standard metric} $d(x, y) = |x - y|$, and more generally $\mathbb{R}^n$ has the Euclidean metric $d(x, y) = \sqrt{\sum_{i = 1}^n (x_i - y_i)^2}$. Any set $X$ also admits the \emph{discrete metric}
+    $\mathbb{R}$ has the \emph{standard metric} given by $d(x, y) = |x - y|$, and more generally $\mathbb{R}^n$ has the Euclidean metric given by
+    \[
+        d(x, y) = \sqrt{\sum_{i = 1}^n (x_i - y_i)^2}.
+    \]
+\end{example}
+\begin{example}
+    Any set $X$ admits the \emph{discrete metric}
     \[
     d(x, y) =
     \begin{cases}
@@ -61,8 +70,10 @@ These notes introduce general topology and some topics of algebraic topology sui
     \[
     B_r(x_0) = \{x \in X \mid d(x_0, x) < r\}.
     \]
-    Replacing $<$ by $\leq$ yields the \emph{closed ball} $\overline{B_r}(x_0)$.
+    Replacing $<$ by $\leq$ yields \emph{closed balls}.
 \end{definition}
+
+Open balls in the most familiar setting $\mathbb{R}^n$ with the standard metric are open intervals for $n = 1$, the interior region given by a circle for $n = 2$, and the interior region given by a sphere for $n = 3$.
 
 \begin{definition}[open sets in metric spaces]
     \label{metricopen}
@@ -72,10 +83,6 @@ These notes introduce general topology and some topics of algebraic topology sui
 \begin{definition}[neighborhoods]
     A \emph{neighborhood} of a point $x$ in a metric space is an open set $U$ containing it, $x \in U$.
 \end{definition}
-
-\begin{remark}
-    Some authors call any set that merely \emph{contains} an open set around $x$ a neighborhood of $x$; in these notes neighborhoods are always open.
-\end{remark}
 
 \begin{lemma}
     \label{ballsopen}
@@ -102,7 +109,7 @@ These notes introduce general topology and some topics of algebraic topology sui
 \begin{example}
     The open balls of $(\mathbb{R}, |\cdot|)$ are exactly the open intervals, so by \cref{unionballs} a set is open in $\mathbb{R}$ iff it is a union of open intervals:
     \[
-    \tau_{\mathbb{R}} = \left\{\bigcup_{\alpha \in A} (a_\alpha, b_\alpha) \;\middle|\; (a_\alpha, b_\alpha) \subseteq \mathbb{R} \text{ open intervals}\right\}.
+    \tau_{\mathbb{R}} = \left\{\bigcup_{\alpha \in A} (a_\alpha, b_\alpha) \mid (a_\alpha, b_\alpha) \subseteq \mathbb{R}\right\}.
     \]
     In the discrete metric every singleton $\{x\} = B_{1/2}(x)$ is an open ball, so every subset of $X$ is open.
 \end{example}
