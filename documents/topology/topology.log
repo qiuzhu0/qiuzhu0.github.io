@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  5 SEP 2026 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  5 SEP 2026 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology/intro-topology.tex
-(/Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology/intro-topology.tex
+**/Users/alex/Documents/qiuzhu0.github.io/documents/topology/topology.tex
+(/Users/alex/Documents/qiuzhu0.github.io/documents/topology/topology.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -676,8 +676,8 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \c@remark=\count347
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 25.
- (./intro-topology.aux)
-\openout1 = `intro-topology.aux'.
+ (./topology.aux)
+\openout1 = `topology.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 25.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 25.
@@ -776,9 +776,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 \c@mv@tabular=\count354
 \c@mv@boldtabular=\count355
 Package hyperref Info: Link coloring OFF on input line 25.
- (./intro-topology.out) (./intro-topology.out)
+ (./topology.out) (./topology.out)
 \@outlinefile=\write4
-\openout4 = `intro-topology.out'.
+\openout4 = `topology.out'.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 27.
@@ -810,12 +810,12 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 28.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 28.
- (./intro-topology.toc
+ (./topology.toc
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 )
 \tf@toc=\write5
-\openout5 = `intro-topology.toc'.
+\openout5 = `topology.toc'.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 32.
@@ -825,24 +825,24 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 6.1pt on input line 61.
  [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}] [2] [3] [4] [5] (./intro-topology.aux)
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}] [2] [3] [4] [5] (./topology.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `intro-topology.out' has not changed.
+Package rerunfilecheck Info: File `topology.out' has not changed.
 (rerunfilecheck)             Checksum: 815003E93165903FC2FAC331F008F196;350.
  ) 
 Here is how much of TeX's memory you used:
  27295 strings out of 467525
- 507229 string characters out of 5418982
- 872486 words of memory out of 5000000
+ 507067 string characters out of 5418982
+ 872456 words of memory out of 5000000
  55685 multiletter control sequences out of 15000+600000
  686508 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,15n,121p,674b,1072s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,15n,121p,662b,1072s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on intro-topology.pdf (5 pages, 205042 bytes).
+Output written on topology.pdf (5 pages, 205042 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams

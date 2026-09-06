@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1788652867.81688 "/Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology/intro-topology.tex" "intro-topology.pdf" "intro-topology" 1788652868.35289 0
-  "/Users/alex/Documents/qiuzhu0.github.io/documents/intro-topology/intro-topology.tex" 1788652867.64257 13650 dadc687c57ef1e203b53336f75033d04 ""
+["pdflatex"] 1788653017.26998 "/Users/alex/Documents/qiuzhu0.github.io/documents/topology/topology.tex" "topology.pdf" "topology" 1788653017.82228 0
+  "/Users/alex/Documents/qiuzhu0.github.io/documents/topology/topology.tex" 1788652867.64257 13650 dadc687c57ef1e203b53336f75033d04 ""
   "/Users/alex/Library/texmf/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc" 1699652218 3877 2ca811886181a05a861d20a35de75e06 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
@@ -211,14 +211,14 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1787883329 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "intro-topology.aux" 1788652868.29733 1619 8697126ecc89faf288cc9fc2ee12a7cd "pdflatex"
-  "intro-topology.out" 1788652868.29776 350 815003e93165903fc2fac331f008f196 "pdflatex"
-  "intro-topology.tex" 1788652867.64257 13650 dadc687c57ef1e203b53336f75033d04 ""
-  "intro-topology.toc" 1788652868.2979 211 42808142eea7967170dae359001dbf8a "pdflatex"
+  "topology.aux" 1788653017.76505 1619 8697126ecc89faf288cc9fc2ee12a7cd "pdflatex"
+  "topology.out" 1788653017.76546 350 815003e93165903fc2fac331f008f196 "pdflatex"
+  "topology.tex" 1788652867.64257 13650 dadc687c57ef1e203b53336f75033d04 ""
+  "topology.toc" 1788653017.7656 211 42808142eea7967170dae359001dbf8a "pdflatex"
   (generated)
-  "intro-topology.aux"
-  "intro-topology.log"
-  "intro-topology.out"
-  "intro-topology.pdf"
-  "intro-topology.toc"
+  "topology.aux"
+  "topology.log"
+  "topology.out"
+  "topology.pdf"
+  "topology.toc"
   (rewritten before read)
