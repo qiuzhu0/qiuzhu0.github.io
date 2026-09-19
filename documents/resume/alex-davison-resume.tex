@@ -38,6 +38,12 @@
   \par\addvspace{2pt}%
   \noindent\textbf{#1} #2\hfill #3\par
 }
+% Paragraph-style description under an entry (matches the website's
+% Software section, which uses prose instead of bullet lists)
+\newcommand{\entrydesc}[1]{%
+  \par\addvspace{1pt}%
+  \noindent #1\par
+}
 
 \setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 
@@ -74,48 +80,27 @@
 
 \entry{Gecko Robotics}{Summer 2026}
 \subentry{Software Intern}{}
-\begin{itemize}
-  \item Solo-built the logbook capabilities on Gecko's Cantilever software platform for power plants, encompassing all logging modes including daily operator rounds, offloading reports, and work orders.
-  \item Integrated logbook contextual information into Cantilever's agentic document search and LLM pipeline.
-  \item Interviewed control room operators on-site at multiple plants, translating operator feedback into logbook's features.
-  \item Ingested logbook histories of several plants into Cantilever.
-  \item Rolled out to 150+ plants in the US, comprising 5\% of the North American power grid.
-\end{itemize}
+\entrydesc{Solo-built the logbook pages and integration to Gecko's Cantilever software platform for power plants, encompassing all logging modes including daily operator rounds, offloading reports, and work orders. Integrated logbook context into Cantilever's agentic document search and LLM pipeline, and interviewed control room operators on-site at multiple plants, translating operator feedback into logbook features. Rolled out to 150+ plants in the US, comprising 5\% of the North American power grid.}
 
 \entry{Reprogramming}{}
 \subentry{Software Developer (Contracted)}{2024}
-\begin{itemize}
-  \item Designed and developed a JavaScript web application for Thales Academy (a network of 13 Pre-K--12 schools) to automate creation of math worksheets for elementary students.
-  \item Ensured alignment with curricula by designing features that allow teachers to tailor worksheet creation parameters.
-\end{itemize}
+\entrydesc{Designed and developed a JavaScript web application for Thales Academy, a network of 13 Pre-K--12 schools, automating creation of math worksheets for elementary students, with teacher-tailorable parameters to ensure alignment with curricula.}
 
 \entry{DataAnnotation}{}
 \subentry{Freelance Software Developer}{2023--25}
-\begin{itemize}
-  \item Worked on a variety of script and codebase revisions across multiple languages (Python, Java, JavaScript, C, C++).
-  \item Provided thorough code reviews, troubleshooting approaches, and detailed explanations of revisions implemented.
-\end{itemize}
+\entrydesc{Worked on a variety of script and codebase revisions across multiple languages (Python, Java, JavaScript, C, C++), providing thorough code reviews, troubleshooting approaches, and detailed explanations of revisions implemented.}
 
 \entry{Math Tutoring}{}
 \subentry{Math Tutor}{2023--now}
-\begin{itemize}
-  \item Tutored students weekly on subjects ranging from elementary level math to calculus 4.
-  \item Private tutoring (2023–2024), Mathnasium tutoring (2024–2025), SBU ASTC tutoring (2025–now)
-\end{itemize}
+\entrydesc{Tutored students weekly on subjects ranging from elementary level math to calculus 4: private (2023--2024), Mathnasium (2024--2025), SBU ASTC (2025--present).}
 
 \ressection{PROJECTS}
 
-\entry{EOcross Solver}{2022}
-\begin{itemize}
-  \item Invented an algorithm for Rubik's cube EOcross solving that balances computer optimization with human intuition.
-  \item Algorithm was adopted by the CrystalCube project (\href{https://crystalcuber.com}{crystalcuber.com}), used for training by several top speedsolvers.
-\end{itemize}
-
 \entry{ChessDB Mobile}{2023}
-\begin{itemize}
-  \item Developed a mobile-friendly JavaScript web application for exploring chess openings, integrated with real-time statistics and evaluation data using APIs from chessdb.cn and lichess.org.
-  \item Project serves as the original codebase that the ChessPath project (\href{https://chesspath.pro}{chesspath.pro}) was built on, with hundreds of users.
-\end{itemize}
+\entrydesc{A mobile-friendly web app for exploring chess openings with live statistics and evaluation data from chessdb.cn and lichess.org. The original codebase behind the \href{https://chesspath.pro}{ChessPath} program, with hundreds of users.}
+
+\entry{EOcross Solver}{2022}
+\entrydesc{A novel algorithm for Rubik's cube EOcross-solving that balances computer optimization with human intuition. The \href{https://crystalcuber.com}{CrystalCube} project implements my algorithm, used for training by several top speedsolvers.}
 
 \ressection{STUDENT ENGAGEMENT}
 
